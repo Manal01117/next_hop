@@ -31,7 +31,7 @@ const Page: React.FC = () => {
     const fetchData = async () => {
       try {
         if (fromValue && toValue) {
-          const path = `http://192.168.43.201:8000/${fromValue}/${toValue}`;
+          const path = `http://192.168.63.192:8000/${fromValue}/${toValue}`;
           const response = await fetch(path);
           const responseData = await response.json();
           console.log('API Response Data:', responseData);
